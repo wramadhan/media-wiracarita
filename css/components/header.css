@@ -1,0 +1,27 @@
+.hamburger,
+.search {
+  width: 2rem;
+  margin: 0px 10px;
+}
+
+.hamburger,
+.search,
+.brand {
+  background-color: transparent;
+}
+
+.header {
+  background-color: #45474b;
+  padding: 24px 18px;
+}
+
+.brand {
+  color: #f5f7f8;
+  font-size: 24pt;
+  font-family: Lancelot, sans-serif;
+  text-shadow: 5px 5px 4px #000;
+}
+.nav-button {
+  display: flex;
+  justify-content: space-between;
+}
