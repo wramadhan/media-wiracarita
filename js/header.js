@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 })
 
-// Function to update time
 function updateTime() {
   const timeElement = document.getElementById('header-time')
   const now = new Date()
@@ -49,7 +48,7 @@ function handleFacilityElements() {
   const facilities = document.querySelectorAll('.header__facility')
   const searchWide = document.querySelector('.header__searchWide')
 
-  if (window.innerWidth >= 480) {
+  if (window.innerWidth >= 600) {
     facilities.forEach((facility) => {
       facility.style.display = 'none'
     })
