@@ -7,7 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
       setInterval(updateTime, 6000)
 
       handleFacilityElements()
-      window.addEventListener('resize', handleFacilityElements)
+      handleToggleShowNav()
+      window.addEventListener('resize', () => {
+        handleFacilityElements()
+        handleToggleShowNav()
+      })
     })
 })
 
@@ -48,7 +52,7 @@ function handleFacilityElements() {
   const facilities = document.querySelectorAll('.header__facility')
   const searchWide = document.querySelector('.header__searchWide')
 
-  if (window.innerWidth >= 600) {
+  if (window.innerWidth >= 1050) {
     facilities.forEach((facility) => {
       facility.style.display = 'none'
     })
@@ -62,5 +66,20 @@ function handleFacilityElements() {
     if (searchWide) {
       searchWide.style.display = 'none'
     }
+  }
+}
+
+function handleToggleShowNav() {
+  const getNavList = document.querySelector('.header__listNav')
+  const getBurgerIcon = document.querySelector('.header__hamburger')
+
+  getBurgerIcon.addEventListener('click', () => {
+    if (window.innerWidth < 1050) {
+      getNavList.classList.toggle('show')
+    }
+  })
+
+  if (window.innerWidth >= 1050) {
+    getNavList.classList.remove('show')
   }
 }
