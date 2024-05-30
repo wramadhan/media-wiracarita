@@ -52,7 +52,7 @@ function handleFacilityElements() {
   const facilities = document.querySelectorAll('.header__facility')
   const searchWide = document.querySelector('.header__searchWide')
 
-  if (window.innerWidth >= 1050) {
+  if (window.innerWidth >= 700) {
     facilities.forEach((facility) => {
       facility.style.display = 'none'
     })
@@ -74,12 +74,12 @@ function handleToggleShowNav() {
   const getBurgerIcon = document.querySelector('.header__hamburger')
 
   getBurgerIcon.addEventListener('click', () => {
-    if (window.innerWidth < 1050) {
+    if (window.innerWidth < 700) {
       getNavList.classList.toggle('show')
     }
   })
 
-  if (window.innerWidth >= 1050) {
+  if (window.innerWidth >= 700) {
     getNavList.classList.remove('show')
   }
 }
