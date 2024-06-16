@@ -79,7 +79,11 @@ main {
   }
   .main__smallText {
     display: flex;
-    width: 100vw;
+    width: 93vw;
+    transform: translateX(12px);
+  }
+  .main__newsTitle {
+    transform: translateX(6px);
   }
 }
 
@@ -203,7 +207,7 @@ main {
 }
 
 .main__second {
-  max-height: 800px;
+  height: fit-content;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(1, 1fr);
