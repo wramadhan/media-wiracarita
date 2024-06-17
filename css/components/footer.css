@@ -1,7 +1,7 @@
 footer {
   background: var(--secondary-color);
   color: var(--quarterary-color);
-  padding: 12px 32px;
+
   /* width: 95vw; */
   width: -webkit-fill-available;
   font-family: var(--main-font);
@@ -26,6 +26,7 @@ footer > div:first-of-type > ul > li > a:hover {
 .footer__copyright {
   font-size: 10px;
   text-align: center;
+  margin-top: 12px;
 }
 
 footer > div > p {
@@ -44,18 +45,15 @@ footer > div > p {
   .footer__copyright {
     font-size: 1vw;
   }
-  /* footer {
-    width: 93vw;
-  } */
-  /* footer > div > p {
-    font-size: 24pt;
-  } */
+  footer {
+    padding: 12px 32px;
+  }
 }
 @media (max-width: 700px) {
   footer > div > p {
     font-size: 6vw;
   }
-  /* footer {
-    width: 89vw;
-  } */
+  footer {
+    padding: 8px 12px;
+  }
 }
