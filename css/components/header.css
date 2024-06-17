@@ -8,8 +8,8 @@ header {
 
 .header__hamburger,
 .header__search {
-  width: 2rem;
-  margin: 0px 12px;
+  width: 6vw;
+  margin: 0px 2vw;
 }
 
 .header__hamburger,
