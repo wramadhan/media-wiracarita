@@ -1,0 +1,27 @@
+footer {
+  background: var(--secondary-color);
+  color: var(--quarterary-color);
+  padding: 12px 24px;
+  font-family: var(--main-font);
+}
+footer > div > p {
+  font-family: var(--logo-font);
+}
+footer > div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+footer > div:first-of-type > ul > li {
+  display: flex;
+  flex-direction: column;
+}
+.footer__copyright {
+  font-size: 10px;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .footer__copyright {
+    font-size: 1vw;
+  }
+}
