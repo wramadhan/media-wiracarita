@@ -42,6 +42,13 @@ main {
   .main__newsTitle {
     width: -webkit-fill-available;
   }
+  .main__imageFilter {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .main__imageFilter:hover {
+    transform: scale(1.05) translate(0px, 10px);
+  }
 }
 
 @media (max-width: 700px) {
