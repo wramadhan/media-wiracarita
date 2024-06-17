@@ -95,5 +95,6 @@ button {
     background: red;
   }
 }
-@media (max-width: 700px) {
+body {
+  overflow-x: hidden;
 }
