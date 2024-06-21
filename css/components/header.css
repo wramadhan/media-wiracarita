@@ -28,7 +28,6 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: var(--tertiary-color);
-  font-family: var(--main-font);
 }
 
 .header__listNav.show {

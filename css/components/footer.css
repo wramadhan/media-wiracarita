@@ -1,10 +1,8 @@
 footer {
   background: var(--secondary-color);
   color: var(--quarterary-color);
-
-  /* width: 95vw; */
   width: -webkit-fill-available;
-  font-family: var(--main-font);
+  margin-top: 32px;
 }
 footer > div > p {
   font-family: var(--logo-font);
