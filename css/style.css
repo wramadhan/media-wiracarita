@@ -80,22 +80,20 @@ button {
 }
 @media (min-width: 700px) {
   .news {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-  article {
-    grid-area: 1 / 1 / 2 / 7;
-    background: blue;
-  }
-  aside {
-    grid-area: 1 / 7 / 2 / 11;
-    background: red;
+    padding: 0px 32px;
   }
 }
 body {
   width: 100vw;
   overflow-x: hidden;
+  font-family: var(--main-font);
+}
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.justify-between {
+  justify-content: space-between;
 }
